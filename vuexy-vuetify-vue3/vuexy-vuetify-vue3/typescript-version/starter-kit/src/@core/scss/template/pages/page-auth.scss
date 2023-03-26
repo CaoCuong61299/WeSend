@@ -1,0 +1,172 @@
+.layout-bg {
+  position: absolute;
+  background-blend-mode: color-burn;
+  background-image: url("@images/signup/bg-signup.png");
+  background-size: cover;
+  inset: 0;
+  opacity: 0.4;
+}
+
+.layout-blank {
+  position: absolute;
+  inset: 0;
+
+  .layout-login {
+    position: absolute;
+    inset: 0;
+  }
+
+  .login-title-logo {
+    color: #111827;
+    font-size: 32px;
+    margin-block-start: 123px;
+  }
+
+  .login-content {
+    margin-block-start: 30px;
+
+    .content-block {
+      border-radius: 15px;
+      background-color: white;
+      block-size: 292px;
+      inline-size: 466px;
+      padding-block: 0;
+      padding-inline: 30px;
+
+      .block-header {
+        display: flex;
+        justify-content: center;
+        color: #111827;
+        font-size: 24px;
+        margin-block-start: 39px;
+      }
+
+      .block-title {
+        color: #4b5563;
+        font-size: 16px;
+        margin-block-start: 4px;
+
+        .block-title-text {
+          display: flex;
+          justify-content: center;
+        }
+      }
+
+      .block-input {
+        display: flex;
+        justify-content: center;
+        block-size: 48px;
+        margin-block-start: 19px;
+
+        .v-field__outline__start {
+          border-style: none !important;
+        }
+
+        .v-field__outline__end {
+          border-style: none !important;
+        }
+
+        .input-before {
+          inline-size: 60px !important;
+          margin-inline-end: 8px;
+        }
+
+        .input-after {
+          inline-size: 237px;
+          margin-inline-end: 8px;
+        }
+
+        .input-submit {
+          color: white;
+
+          .submit-btn {
+            border-radius: 5px;
+          }
+        }
+
+        .input-number-confirm {
+          inline-size: 48px !important;
+          margin-inline-end: 8px;
+
+          input[type="number"] {
+            appearance: textfield;
+          }
+
+          input::-webkit-outer-spin-button,
+          input::-webkit-inner-spin-button {
+            appearance: none;
+          }
+        }
+
+        .v-text-field input {
+          block-size: 48px;
+          color: #374151;
+          font-size: 15px;
+          padding-block: 0;
+          padding-inline: 11px;
+        }
+      }
+
+      .block-confirm {
+        display: flex;
+        align-items: center;
+        margin-block-start: 16px;
+
+        .confirm-text {
+          color: #374151;
+          font-size: 16px;
+        }
+      }
+
+      .block-verify {
+        display: flex;
+        justify-content: center;
+        color: white;
+        margin-block-start: 30px;
+
+        .verify-btn {
+          border-radius: 50px;
+        }
+      }
+
+      .block-resend {
+        display: flex;
+        justify-content: center;
+        color: #374151;
+        font-size: 16px;
+        margin-block-start: 32px;
+      }
+    }
+  }
+
+  .login-sign-up {
+    color: #374151;
+    margin-block-start: 30px;
+
+    .sign-up-line {
+      color: #6354d9;
+      cursor: pointer;
+      text-decoration: underline;
+    }
+  }
+
+  .login-footer {
+    position: absolute;
+    display: block;
+    color: #374151;
+    font-size: 16px;
+    inset-block-end: 80px;
+    inset-inline-start: 50%;
+    transform: translateX(-50%);
+
+    .footer-tilte {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
+
+.layout-login.verify .content-block {
+  block-size: 355px;
+  inline-size: 480px;
+}
